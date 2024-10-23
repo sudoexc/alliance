@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать файлы</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #001f3f;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            padding-bottom: 20%;
+        }
+        .download-btn {
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            width: 400px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease !important;
+        }
+        .download-btn:hover {
+            background-color: #0074D9;
+            transform: scale(1.05);
+        }
+        .logo {
+            width: 50%;
+        }
+        h1 {
+            transition: all 0.3s ease !important;
+        }
+        h1:hover {
+            color: #0074D9;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="logo" class="logo" data-aos="fade-down">
+    <div class="container">
+        <h1 data-aos="fade-down">Скачать файлы</h1>
+        <a href="files/file1.PDF" download class="download-btn" data-aos="fade-right">прейскуранты на орган и на АИЛ</a>
+        <a href="files/file2.rar" download class="download-btn" data-aos="fade-up">Информация на сайт ОС</a>
+        <a href="files/file3.rar" download class="download-btn" data-aos="fade-left">Информация на сайт АИЛ</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
