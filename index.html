@@ -8,11 +8,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #001f3f;
+            background-color: #34495e;
             color: #ffffff;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             min-height: 100vh;
             margin: 0;
@@ -21,15 +20,34 @@
         }
         .container {
             text-align: center;
-            padding-bottom: 20%;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .section {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .section .download-btn {
+            width: 400px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease !important;
+        }
+        .section-title:hover {
+            color: #0074D9;
+            cursor: default;
         }
         .download-btn {
             color: #ffffff;
             border: 1px solid #ffffff;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 18px;
-            width: 400px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
@@ -42,6 +60,8 @@
         }
         .logo {
             width: 50%;
+            max-width: 300px;
+            margin-bottom: 30px;
         }
         h1 {
             transition: all 0.3s ease !important;
@@ -53,12 +73,41 @@
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="logo" class="logo" data-aos="fade-down">
+    <img src="logo-removebg-preview.png" alt="logo" class="logo" data-aos="fade-down">
     <div class="container">
         <h1 data-aos="fade-down">Скачать файлы</h1>
-        <a href="files/file1.PDF" download class="download-btn" data-aos="fade-right">прейскуранты на орган и на АИЛ</a>
-        <a href="files/file2.rar" download class="download-btn" data-aos="fade-up">Информация на сайт ОС</a>
-        <a href="files/file3.rar" download class="download-btn" data-aos="fade-left">Информация на сайт АИЛ</a>
+        
+        <div class="section" data-aos="fade-up">
+            <h2 class="section-title">Прейскуранты</h2>
+            <a href="files/file1.PDF" download class="download-btn">Прейскурант на орган и на АИЛ</a>
+        </div>
+        
+        <div class="section" data-aos="fade-up">
+            <h2 class="section-title">Информация на сайт ОС</h2>
+            <a href="files/Политика беспристрастности.docx" download class="download-btn">Политика беспристрастности</a>
+            <a href="files/ПСМ ОС 11 2022 Жалобы и апелляции.docx" download class="download-btn">ПСМ ОС 11 2022 Жалобы и апелляции</a>
+            <a href="files/Источники финансирования.docx" download class="download-btn">Источники финансирования</a>
+            <a href="files/Политика_по_исключению_дискриминации.docx" download class="download-btn">Политика по исключению дискриминации</a>
+            <a href="files/Свидетельство ОС.jpg" download class="download-btn">Свидетельство ОС</a>
+            <a href="files/ОА ОС 2024.pdf" download class="download-btn">ОА ОС 2024</a>
+            <a href="files/Соглашение ОС с заявителем.docx" download class="download-btn">Соглашение ОС с заявителем</a>
+            <a href="files/Политика в области качества.docx" download class="download-btn">Политика в области качества</a>
+            <a href="files/Права и обязанности заявителя.docx" download class="download-btn">Права и обязанности заявителя</a>
+            <a href="files/Анкета - заказчикам.docx" download class="download-btn">Анкета - заказчикам</a>
+            <a href="files/РКСМ_ОС_01_2022_Руководство_по_качеству_ОС (4).docx" download class="download-btn">Руководство по качеству ОС</a>
+        </div>
+        
+        <div class="section" data-aos="fade-up">
+            <h2 class="section-title">Информация на сайт АИЛ</h2>
+            <a href="files/ППР_01_2022_Правило_принятия_решения (2).docx" download class="download-btn">Правило принятия решения</a>
+            <a href="files/Инструкция_по_обеспечению_приемлемого_доступа.docx" download class="download-btn">Инструкция по обеспечению приемлемого доступа</a>
+            <a href="files/ОА АИЛ 2024.pdf" download class="download-btn">ОА АИЛ 2024</a>
+            <a href="files/Политика беспристрастности (2).docx" download class="download-btn">Политика беспристрастности</a>
+            <a href="files/Политика в области качества (2).docx" download class="download-btn">Политика в области качества</a>
+            <a href="files/ПСМ АИЛ 12 2022 Жалобы (претензии).docx" download class="download-btn">ПСМ АИЛ 12 2022 Жалобы</a>
+            <a href="files/Свидетельство АИЛ 2022.pdf" download class="download-btn">Свидетельство АИЛ</a>
+            <a href="files/Анкета Форма.docx" download class="download-btn">Анкета Форма</a>
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
