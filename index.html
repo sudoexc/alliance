@@ -32,6 +32,7 @@
         }
         .section .download-btn {
             width: 400px;
+            max-width: 100%;
         }
         .section-title {
             font-size: 24px;
@@ -53,6 +54,8 @@
             text-decoration: none;
             display: inline-block;
             transition: all 0.3s ease !important;
+            width: 100%;
+            box-sizing: border-box;
         }
         .download-btn:hover {
             background-color: #0074D9;
@@ -69,6 +72,51 @@
         h1:hover {
             color: #0074D9;
             cursor: default;
+        }
+
+        /* Медиа-запросы для адаптивности */
+        @media (max-width: 1024px) {
+            .container {
+                width: 90%;
+            }
+            .section .download-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px 0;
+            }
+            .container {
+                width: 95%;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .download-btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            .logo {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+            .section-title {
+                font-size: 18px;
+            }
+            .download-btn {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            .logo {
+                width: 90%;
+            }
         }
     </style>
 </head>
